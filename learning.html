@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSec Learning Vault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#00B4D8',
+              darkBg: '#0F172A',
+              cardBg: '#1E293B',
+              slate: '#334155',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="h-9 w-9 rounded-lg bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold">
+          ⚡
+        </div>
+        <span class="font-bold text-lg tracking-wider text-slate-100">CYBER<span class="text-teal-400">VAULT</span></span>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav class="flex space-x-6 text-sm font-medium">
+        <a href="index.html" class="text-slate-400 hover:text-slate-200 transition-colors">Home</a>
+        <a href="roadmap.html" class="text-slate-400 hover:text-slate-200 transition-colors">Roadmap</a>
+        <a href="learning.html" class="text-teal-400 border-b-2 border-teal-400 pb-1">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Area -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+
+    <!-- Hero Banner -->
+    <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+      <div class="max-w-2xl relative z-10">
+        <span class="text-xs font-mono text-teal-400 uppercase tracking-widest bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/20">Learning Knowledgebase</span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-100 mt-4">Essential Cybersecurity Resources & Tools</h1>
+        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+          A structured collection of external interactive labs, industry-standard tool documentation, and security reference cheat sheets for offensive and defensive practice.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hands-on Practice Platforms -->
+    <section class="space-y-4">
+      <div class="flex items-center space-x-2">
+        <h2 class="text-xl font-bold text-slate-100">Interactive Cyber Labs</h2>
+        <span class="text-xs text-slate-500 font-mono">(Gamified Environments)</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer" class="group bg-slate-800/40 border border-slate-800 hover:border-teal-500/50 rounded-xl p-5 transition-all duration-200 hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Beginner Friendly</span>
+              <span class="text-slate-500 group-hover:text-teal-400 transition-colors">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-100 group-hover:text-teal-400 transition-colors">TryHackMe</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Guided bite-sized learning paths covering networking, Linux foundations, and basic pentesting.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-500">tryhackme.com</div>
+        </a>
+
+        <a href="https://www.hackthebox.com" target="_blank" rel="noopener noreferrer" class="group bg-slate-800/40 border border-slate-800 hover:border-teal-500/50 rounded-xl p-5 transition-all duration-200 hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">Intermediate / Advanced</span>
+              <span class="text-slate-500 group-hover:text-teal-400 transition-colors">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-100 group-hover:text-teal-400 transition-colors">Hack The Box</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Real-world penetration testing machines, cloud challenges, and red teaming ranges.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-500">hackthebox.com</div>
+        </a>
+
+        <a href="https://overthewire.org/wargames/" target="_blank" rel="noopener noreferrer" class="group bg-slate-800/40 border border-slate-800 hover:border-teal-500/50 rounded-xl p-5 transition-all duration-200 hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="text-xs font-semibold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">Linux & Command Line</span>
+              <span class="text-slate-500 group-hover:text-teal-400 transition-colors">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-100 group-hover:text-teal-400 transition-colors">OverTheWire (Bandit)</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Classic wargames designed to teach terminal commands, SSH, file permissions, and security concepts.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-500">overthewire.org</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Industry Standard Tools Section -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-slate-100">Core Security Tools & Documentation</h2>
+
+      <div class="overflow-x-auto bg-slate-800/40 border border-slate-800 rounded-xl">
+        <table class="w-full text-left text-sm text-slate-300">
+          <thead class="bg-slate-900/80 text-xs uppercase text-slate-400 border-b border-slate-800">
+            <tr>
+              <th class="py-3 px-4">Tool</th>
+              <th class="py-3 px-4">Category</th>
+              <th class="py-3 px-4">Primary Use Case</th>
+              <th class="py-3 px-4 text-right">Official Doc Link</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60">
+            <tr class="hover:bg-slate-800/50">
+              <td class="py-3.5 px-4 font-bold text-slate-100">Nmap</td>
+              <td class="py-3.5 px-4 text-teal-400 text-xs font-mono">Network Reconnaissance</td>
+              <td class="py-3.5 px-4 text-slate-400">Network discovery, port scanning, and OS detection.</td>
+              <td class="py-3.5 px-4 text-right">
+                <a href="https://nmap.org/docs.html" target="_blank" rel="noopener noreferrer" class="text-xs text-teal-400 hover:underline">nmap.org ↗</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-800/50">
+              <td class="py-3.5 px-4 font-bold text-slate-100">Wireshark</td>
+              <td class="py-3.5 px-4 text-teal-400 text-xs font-mono">Packet Analysis</td>
+              <td class="py-3.5 px-4 text-slate-400">Capturing and analyzing real-time network protocol traffic.</td>
+              <td class="py-3.5 px-4 text-right">
+                <a href="https://www.wireshark.org/docs/" target="_blank" rel="noopener noreferrer" class="text-xs text-teal-400 hover:underline">wireshark.org ↗</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-800/50">
+              <td class="py-3.5 px-4 font-bold text-slate-100">Burp Suite</td>
+              <td class="py-3.5 px-4 text-teal-400 text-xs font-mono">Web Application Security</td>
+              <td class="py-3.5 px-4 text-slate-400">Interpreting HTTP traffic, testing web APIs, and identifying web flaws.</td>
+              <td class="py-3.5 px-4 text-right">
+                <a href="https://portswigger.net/burp/documentation" target="_blank" rel="noopener noreferrer" class="text-xs text-teal-400 hover:underline">portswigger.net ↗</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-800/50">
+              <td class="py-3.5 px-4 font-bold text-slate-100">OWASP ZAP</td>
+              <td class="py-3.5 px-4 text-teal-400 text-xs font-mono">Open Source Scanner</td>
+              <td class="py-3.5 px-4 text-slate-400">Automated vulnerability scanning for web applications.</td>
+              <td class="py-3.5 px-4 text-right">
+                <a href="https://www.zaproxy.org/docs/" target="_blank" rel="noopener noreferrer" class="text-xs text-teal-400 hover:underline">zaproxy.org ↗</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Reference Frameworks -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-slate-100">Frameworks & Cheat Sheets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-bold text-slate-200">MITRE ATT&CK Framework</h3>
+          <p class="text-xs text-slate-400 mt-1">Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.</p>
+          <a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-xs text-teal-400 font-semibold hover:underline">
+            Explore Matrix ↗
+          </a>
+        </div>
+
+        <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-bold text-slate-200">SANS Security Cheat Sheets</h3>
+          <p class="text-xs text-slate-400 mt-1">Free downloadable operational quick references for incident response, digital forensics, and command syntax.</p>
+          <a href="https://www.sans.org/security-resources/cheat-sheets/" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-xs text-teal-400 font-semibold hover:underline">
+            View SANS Resources ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-500">
+    <p>CyberSec Learning Resource Index • Static Demo Sandbox</p>
+  </footer>
+
+</body>
+</html>
